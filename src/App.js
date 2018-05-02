@@ -3,24 +3,31 @@ import { Parallax, Background } from 'react-parallax';
 import logo from './logo.svg';
 import './App.css';
 
+import myriad from './MyriadPro-Regular.otf';
+
 import Header from './Header.js'
 import FormStudent from './FormStudent.js'
 import Footer from './footer.js'
 
 const MyComponent = () => (
   <div>
+    <img style={{width:'100%'}} src={require('./images/top-images.svg')}/>        
     <Header/>
-    <Parallax
+    <div>
+      <div className="content-top" style={{fontFamily:myriad}}>  
+        Openguide is
+      </div>
+    </div>
+    {/* <Parallax
       blur={0}
-      bgImage={require('./asphalt-cold-fog-296555.jpg')}
+      bgImage={require('./images/top-images.svg')}
       bgImageAlt="the dog"
       strength={500}
-      style={{ width:'97%',margin: 'auto',borderRadius:'40px' }}
+      // style={{ width:'97%',margin: 'auto' }}
     >
-      <div style={{ height: '600px'}} />
-      <div style={{ background:'white', borderRadius:'20px' ,position:'absolute',textAlign:'center',padding:'10px',top:'0%',left:'44%',fontSize: '50px',fontFamily: 'comic-sans-ms',marginLeft:'10px'}}>Strangers</div>
-    </Parallax>
-    <div style={{textAlign:'center',fontFamily: 'comic-sans-ms',fontSize: '50px',background:'white'}} className="App-logo-spin">HELLO2</div>
+      <div style={{ height: '900px'}} />
+    </Parallax> */}
+    <div style={{textAlign:'center',fontFamily: 'comic-sans-ms',fontSize: '50px',background:'white'}}>HELLO2</div>
     
     <Parallax
       blur={0}

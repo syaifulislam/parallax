@@ -8,10 +8,18 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 120px;
-  padding: 20px;
-  color: white;
+  height: 55px;
+  width: 100%;
+  background:transparent;
+  /* background: #3A4660; */
+  padding-top: 20px;
+  position: absolute;
+  top: 0%;
+}
+
+.App-header a{
+  float: right;
+  padding: 10px;
 }
 
 .App-title {
@@ -22,22 +30,15 @@
   font-size: large;
 }
 
-.header-home{
-  position:absolute;
+.content-top {
+  position: absolute;
+  top: 33%;
   color: white;
+  font-size : 23px;
+  left: 8%;
 }
 
-.header-list{
-  position:absolute;
-  margin-left: 55px;
-  color: white;    
-}
 
-.header-add{
-  position:absolute;
-  margin-left: 155px;
-  color: white;    
-}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
